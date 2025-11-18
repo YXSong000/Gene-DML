@@ -81,7 +81,7 @@ data/
 
 ## Feature Extraction
 
-The framework supports multiple feature extractors. In this paper, we utilize UNI model, and the feature extracted by the UNI is included in the downloaded data. Before training, you need to download the [UNI](https://huggingface.co/MahmoodLab/UNI) model from Hugging Face save to weights path ``./weights`` and extract features by following code:
+The framework supports multiple feature extractors. In this paper, we utilize UNI model, and the feature extracted by the UNI is included in the downloaded data. Before training, you need to download the UNI model from Hugging Face (https://huggingface.co/MahmoodLab/UNI) save to weights path ``./weights`` and extract features by following code:
 
 ### Using UNI Model
 
@@ -166,7 +166,7 @@ Configuration files are located in the `config/` directory. Each dataset has its
 config/
 ├── her2st/
 │   └── dml.yaml
-├── skin/
+├── skinst/
 │   └── dml.yaml
 └── stnet/
     └── dml.yaml
