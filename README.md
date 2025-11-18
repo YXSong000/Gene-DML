@@ -44,7 +44,7 @@ pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorc
 
 ### Step 1: Download Preprocessed Data
 
-Download the preprocessed data from the provided link and save it to your data directory:
+Download the preprocessed data from the [st data](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/yson2999_uni_sydney_edu_au/EcxJY-e8hQtFpgv64W0Xn2EBhZrJ7PLbCjjmHeKc-0xrLw?e=evVuKD) link and save it to your data directory:
 
 ```bash
 # Create data directory
