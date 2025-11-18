@@ -81,7 +81,7 @@ data/
 
 ## Feature Extraction
 
-The framework supports multiple feature extractors. In this paper, we utilize UNI model, and the feature extracted by the UNI is included in the downloaded data. Before training, you need to download the UNI model from Hugging Face (https://huggingface.co/MahmoodLab/UNI) save to weights path ``./weights`` and extract features by following code:
+The framework supports multiple feature extractors. In this paper, we utilize UNI model, and the feature extracted by the UNI is included in the downloaded data. Before training, you need to download the UNI model from Hugging Face (https://huggingface.co/MahmoodLab/UNI), or any other feature extractors, saving to weights path ``./weights`` and extract features by following code:
 
 ### Using UNI Model
 
@@ -140,7 +140,7 @@ python main.py --config_name stnet/dml --mode train --k 90 --use_kmeans --model_
 Test on held-out folds from cross-validation:
 
 ```bash
-python main.py --config_name her2st/dml --mode test --fold 0 --model_path /path/to/model/weights
+python main.py --config_name her2st/dml --mode test --fold 0 --model_path /path/to/model/ckpt
 ```
 
 ### External Test
@@ -148,15 +148,15 @@ python main.py --config_name her2st/dml --mode test --fold 0 --model_path /path/
 Test on independent external datasets:
 
 ```bash
-python main.py --mode external_test --test_name 10x_breast_ff1 --model_path /path/to/model/weights
+python main.py --mode external_test --test_name 10x_breast_ff1 --model_path /path/to/model/ckpt
 ```
 
 **Available test datasets:**
-- `10x_breast_ff1` (breast)
-- `10x_breast_ff2` (breast)
-- `10x_breast_ff3` (breast)
-- `NCBI463` (skin)
-- `NCBI464` (skin)
+- `10x_breast_ff1` (breast data)
+- `10x_breast_ff2` (breast data)
+- `10x_breast_ff3` (breast data)
+- `NCBI463` (skin data)
+- `NCBI464` (skin data)
 
 ## Configuration
 
