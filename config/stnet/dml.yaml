@@ -1,0 +1,28 @@
+
+
+GENERAL:
+  seed: 2021
+  log_path: path/to/log
+  weight_dir: path/to/weights
+  
+TRAINING:
+  num_k: 8
+  batch_size: 512
+  loss: MSE
+  optimizer: adam
+  learning_rate: 1.0e-4
+  num_epochs: 200
+  early_stopping:
+    monitor: R
+    patience: 20
+    mode: max
+
+DATASET:
+  data_dir: path/to/data 
+  type: stnet
+  num_neighbors: 5
+  t_global_dir: 'gt_features_uni_small_224'
+  n_global_dir: 'gn_features_uni_small'
+  neighbor_dir: 'n_features_uni_small'
+  radius: 224
+  use_pyvips: False
