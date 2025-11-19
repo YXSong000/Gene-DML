@@ -1,6 +1,6 @@
 # Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images
 
-This GitHub repository is the official code of paper Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images (accepted by WACV2026). Please kindly refer to our paper: https://arxiv.org/abs/2507.14670.
+This GitHub repository is the official code of paper Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images **(accepted by WACV2026)**. Please kindly refer to our paper: https://arxiv.org/abs/2507.14670.
 
 ## Table of Contents
 
@@ -44,13 +44,14 @@ pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorc
 
 ### Step 1: Download Preprocessed Data
 
-Download the preprocessed data from the [st data](https://unisydneyedu-my.sharepoint.com/:u:/g/personal/yson2999_uni_sydney_edu_au/EcxJY-e8hQtFpgv64W0Xn2EBhZrJ7PLbCjjmHeKc-0xrLw?e=evVuKD) link and save it to your data directory:
+Download the preprocessed data st_data from [Hugging Face](https://huggingface.co/datasets/YXSong000/Gene-DML_st_datasets) and save it to your data directory:
+
 
 ```bash
 # Create data directory
 mkdir -p path/to/data
 
-# Download and extract TRIPLEX.zip to path/to/data
+# Download and extract st_data.zip to path/to/data
 # The extracted structure should be:
 # data/
 #   ├── her2st/
@@ -65,17 +66,17 @@ Your data directory should follow this structure:
 
 ```
 data/
-├── her2st/                 # HER2ST dataset
-│   ├── ST-cnts/            # Gene expression count files
-│   ├── ST-imgs/            # Histology images
-│   ├── ST-spotfiles/       # Spot coordinate files
-│   ├── gt_features_224/    # Target features (extracted by UNI)
-│   └── n_features_5_224/   # Neighbor features (extracted by UNI)
-├── skinst/                 # skinST dataset
+├── her2st/                           # HER2ST dataset
+│   ├── ST-cnts/                      # Gene expression count files
+│   ├── ST-imgs/                      # Histology images
+│   ├── ST-spotfiles/                 # Spot coordinate files
+│   ├── gt_features_uni_small_224/    # Target features (extracted by UNI)
+│   └── n_features_uni_small_5_224/   # Neighbor features (extracted by UNI)
+├── skinst/                           # skinST dataset
 │   └── ...
-├── stnet/                  # STNet dataset
+├── stnet/                            # STNet dataset
 │   └── ...
-└── test/                   # External test datasets
+└── test/                             # External test datasets
     └── ...
 ```
 
@@ -177,13 +178,12 @@ config/
 If you use this code in your research, please cite:
 
 ```bibtex
-@misc{song2025genedmldualpathwaymultileveldiscrimination,
-      title={Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images}, 
-      author={Yaxuan Song and Jianan Fan and Hang Chang and Weidong Cai},
-      year={2025},
-      eprint={2507.14670},
-      archivePrefix={arXiv},
-      url={https://arxiv.org/abs/2507.14670}, 
+@article{song2025genedmldualpathwaymultileveldiscrimination,
+         title={Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images}, 
+         author={Yaxuan Song and Jianan Fan and Hang Chang and Weidong Cai},
+         year={2025},
+         journal={arXiv preprint arXiv:2507.14670},
+         url={https://arxiv.org/abs/2507.14670}, 
 }
 ```
 
