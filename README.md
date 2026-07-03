@@ -178,12 +178,13 @@ config/
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{song2025genedmldualpathwaymultileveldiscrimination,
-         title={Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images}, 
-         author={Yaxuan Song and Jianan Fan and Hang Chang and Weidong Cai},
-         year={2025},
-         journal={arXiv preprint arXiv:2507.14670},
-         url={https://arxiv.org/abs/2507.14670}, 
+@InProceedings{Song_2026_WACV,
+    author    = {Song, Yaxuan and Fan, Jianan and Chang, Hang and Cai, Weidong},
+    title     = {Gene-DML: Dual-Pathway Multi-Level Discrimination for Gene Expression Prediction from Histopathology Images},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {5090-5099}
 }
 ```
 
